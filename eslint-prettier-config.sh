@@ -142,14 +142,20 @@ else
         "code": '${max_len_val}',
         "tabWidth": 2,
         "comments": '${max_len_val}',
-        "ignoreComments": false,
+        "ignoreComments": true,
         "ignoreTrailingComments": true,
         "ignoreUrls": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ]
+    ],
+    "react/prop-types": [
+      "warn",
+      {
+        "skipUndeclared": true,
+      }
+    ],
   }
 }' >> .eslintrc${config_extension}
 fi
@@ -164,7 +170,10 @@ else
   echo ${config_opening}'
   "printWidth": '${max_len_val}',
   "singleQuote": true,
-  "trailingComma": "'${trailing_comma_pref}'"
+  "trailingComma": "'${trailing_comma_pref}',"
+  "arrowParens": "avoid",
+  "semi": false,
+  "bracketSpacing": true,
 }' >> .prettierrc${config_extension}
 fi
 
