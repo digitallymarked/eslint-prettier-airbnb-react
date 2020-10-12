@@ -156,6 +156,7 @@ else
         "skipUndeclared": true,
       }
     ],
+    "import/prefer-default-export": ["off"]
   }
 }' >> .eslintrc${config_extension}
 fi
@@ -173,7 +174,7 @@ else
   "trailingComma": "'${trailing_comma_pref}'",
   "arrowParens": "avoid",
   "semi": false,
-  "bracketSpacing": true,
+  "bracketSpacing": true
 }' >> .prettierrc${config_extension}
 fi
 
