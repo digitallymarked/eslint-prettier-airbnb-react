@@ -77,14 +77,21 @@ Once files are created, you may edit to your liking.
         "code": (SET BY USER),
         "tabWidth": 2,
         "comments": (SET BY USER),
-        "ignoreComments": false,
+        "ignoreComments": true,
         "ignoreTrailingComments": true,
         "ignoreUrls": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ]
+    ],
+    "react/prop-types": [
+      "warn",
+      {
+        "skipUndeclared": true,
+      }
+    ],
+    "import/prefer-default-export": ["off"]
   }
 }
 ```
@@ -97,7 +104,10 @@ Once files are created, you may edit to your liking.
 {
 "printWidth": (SET BY USER),
   "singleQuote": true,
-  "trailingComma": (SET BY USER)
+  "trailingComma": (SET BY USER),
+  "arrowParens": "avoid",
+  "semi": false,
+  "bracketSpacing": true
 }
 ```
 
