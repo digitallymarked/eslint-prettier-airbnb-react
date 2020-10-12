@@ -88,7 +88,7 @@ Once files are created, you may edit to your liking.
     "react/prop-types": [
       "warn",
       {
-        "skipUndeclared": true,
+        "skipUndeclared": true
       }
     ],
     "import/prefer-default-export": ["off"]
